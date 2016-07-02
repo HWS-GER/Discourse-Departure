@@ -1,0 +1,4 @@
+plugins:
+  departure_board_enabled:
+    default: true
+    client: true
