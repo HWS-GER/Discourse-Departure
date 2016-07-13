@@ -1,14 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
 
 
-@font-face {
-    font-family: 'FuturaLightBt';
-    src: url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.eot');
-    src: url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.eot') format('embedded-opentype'),
-         url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.woff') format('woff'),
-         url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.ttf') format('truetype'),
-         url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.svg#FuturaLightBt') format('svg');
-}
 
 .container .list-container  {
     background-image: url("http://working-singer.de/CHECKPOINT/flapper4/img/billboard_bg.jpg");
