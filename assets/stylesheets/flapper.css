@@ -10,6 +10,23 @@
          url('/CHECKPOINT/flapper2/fonts/futura_light_bt-webfont.svg#FuturaLightBt') format('svg');
 }
 
+.container .list-container  {
+    background-image: url("http://working-singer.de/CHECKPOINT/flapper4/img/billboard_bg.jpg");
+    height: 668px;
+    margin: 30px auto 0;
+    width: 1071px;
+}
+#list-area {
+    margin-right: 20px;
+    margin-top: 100px;
+    padding-left: 20px;
+    width: 1040px;
+}
+.topic-list th {
+    background:0 none !important;
+}
+.topic-list > tbody > tr:nth-child(2n+1), .topic-list > tbody > tr:nth-child(2n)  {background:0 none !important;}
+.topic-list > tbody td {border:0 !important;}
 
 /* STRUCTURAL STYLES */
 
