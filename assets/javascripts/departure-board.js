@@ -146,7 +146,7 @@ $(document).ready(function(){
       var entry = 0;
       var lineln = 0;
       jQuery(".wrap").css("max-width","100%");
-      //entry loop
+
       jQuery("a.badge-wrapper.bar").each(function(){
           jQuery(this).addClass("XS");
           var count = jQuery(this).text().length;
@@ -155,9 +155,9 @@ $(document).ready(function(){
 
       jQuery("a.title").each(function(){
           jQuery(this).addClass("XS");
-          jQuery(this).css("width","360px");
+          jQuery(this).css("width","365px");
           var count = jQuery(this).text().length;
-          jQuery(this).flapper({width:21}).change();
+          jQuery(this).flapper({width:22}).change();
       });
      jQuery("span.number").each(function(){
          jQuery(this).addClass("XS");
