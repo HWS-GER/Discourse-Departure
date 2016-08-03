@@ -147,7 +147,7 @@ $(document).ready(function(){
       var lineln = 0;
       jQuery(".wrap").css("max-width","100%");
       //entry loop
-      jQuery(".topic-list-item > td").each(function(){
+      jQuery("a.badge-wrapper.bar").each(function(){
           switch(entry) {
               case 0:
                   lineln = 22;
@@ -162,9 +162,9 @@ $(document).ready(function(){
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:lineln}).change();
       });
-    //  jQuery("span.number").addClass("XS");
-      //var numCount = jQuery("span.number").text().length;
-      //jQuery('span.number').flapper({width:3}).change();
+    /*  jQuery("span.number").addClass("XS");
+      var numCount = jQuery("span.number").text().length;
+      jQuery('span.number').flapper({width:3}).change();*/
   }, 750)
 });
 
