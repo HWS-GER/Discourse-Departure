@@ -148,23 +148,22 @@ $(document).ready(function(){
       jQuery(".wrap").css("max-width","100%");
       //entry loop
       jQuery("a.badge-wrapper.bar").each(function(){
-          switch(entry) {
-              case 0:
-                  lineln = 22;
-                  break;
-              case 1:
-                  lineln = 22;
-                  break;
-              default:
-                  lineln = 22;
-          }
           jQuery(this).addClass("XS");
           var count = jQuery(this).text().length;
-          jQuery(this).flapper({width:lineln}).change();
+          jQuery(this).flapper({width:23}).change();
       });
-    /*  jQuery("span.number").addClass("XS");
-      var numCount = jQuery("span.number").text().length;
-      jQuery('span.number').flapper({width:3}).change();*/
+
+      jQuery("a.title").each(function(){
+          jQuery(this).addClass("XS");
+          var count = jQuery(this).text().length;
+          jQuery(this).flapper({width:23}).change();
+      });
+     jQuery("span.number").each(function(){
+         jQuery(this).addClass("XS");
+         var count = jQuery(this).text().length;
+         jQuery(this).flapper({width:4}).change();
+     });
+
   }, 750)
 });
 
