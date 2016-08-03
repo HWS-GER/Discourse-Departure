@@ -159,13 +159,13 @@ $(document).ready(function(){
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:22}).change();
       });
-     jQuery("span.number").each(function(){
+     jQuery(".num.posts-map").each(function(){
          jQuery(this).addClass("XS").css("width","45px");
          var count = jQuery(this).text().length;
          jQuery(this).flapper({width:2}).change();
      });
       jQuery(".last-post").each(function(){
-          jQuery(this).addClass("XS").css("width","65px");
+          jQuery(this).addClass("XS");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:6}).change();
       });
@@ -174,8 +174,8 @@ $(document).ready(function(){
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:12}).change();
       });
-
-      jQuery(".last-post").css("width","65px");
+   
+      jQuery("div.last-post").css("width","65px");
   }, 750);
 });
 
