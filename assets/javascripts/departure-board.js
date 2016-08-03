@@ -155,7 +155,7 @@ $(document).ready(function(){
 
       jQuery("a.title").each(function(){
           jQuery(this).addClass("XS");
-          jQuery(this).addCss("width","360px");
+          jQuery(this).css("width","360px");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:21}).change();
       });
