@@ -146,7 +146,8 @@ $(document).ready(function(){
       var entry = 0;
       var lineln = 0;
       jQuery(".wrap").css("max-width","100%");
-      jQuery(".topic-list td a").each(function(){
+      //entry loop
+      jQuery("a.badge-wrapper.bar").each(function(){
           switch(entry) {
               case 0:
                   lineln = 22;
@@ -159,11 +160,11 @@ $(document).ready(function(){
           }
           jQuery(this).addClass("XS");
           var count = jQuery(this).text().length;
-          jQuery(this).flapper({width:count}).change();
+          jQuery(this).flapper({width:lineln}).change();
       });
       jQuery("span.number").addClass("XS");
       var numCount = jQuery("span.number").text().length;
-      jQuery('span.number').flapper({width:numCount}).change();
+      jQuery('span.number').flapper({width:3}).change();
   }, 750)
 });
 
