@@ -148,15 +148,21 @@ $(document).ready(function(){
       jQuery(".wrap").css("max-width","100%");
 
       jQuery("a.badge-wrapper.bar").each(function(){
-          jQuery(this).addClass("XS");
-          var count = jQuery(this).text().length;
+          jQuery(this).parent().addClass("XS");
+          var a = jQuery("this").parent().attr("href");
+          var url = "http://checkpointforarts.com/"+a;
+          var atag = "<a href='"+url+"' title='' />";
+          jQuery(this).parent().wrapAll(atag);
           jQuery(this).flapper({width:23}).change();
       });
 
       jQuery("a.title").each(function(){
           jQuery(this).addClass("XS");
-          jQuery(this).css("width","306px");
-          var count = jQuery(this).text().length;
+          jQuery(this).parent().css("width","306px");
+          var a = jQuery("this").parent().attr("href");
+          var url = "http://checkpointforarts.com/"+a;
+          var atag = "<a href='"+url+"' title='' />";
+          jQuery(this).parent().wrapAll(atag);
           jQuery(this).flapper({width:22}).change();
       });
      jQuery(".num.posts-map").each(function(){
@@ -174,7 +180,7 @@ $(document).ready(function(){
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:12}).change();
       });
-   
+
       jQuery("div.last-post").css("width","65px");
   }, 750);
 });
