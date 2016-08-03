@@ -155,25 +155,27 @@ $(document).ready(function(){
 
       jQuery("a.title").each(function(){
           jQuery(this).addClass("XS");
-          jQuery(this).css("width","365px");
+          jQuery(this).css("width","306px");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:22}).change();
       });
      jQuery("span.number").each(function(){
-         jQuery(this).addClass("XS");
+         jQuery(this).addClass("XS").css("width","45px");
          var count = jQuery(this).text().length;
          jQuery(this).flapper({width:2}).change();
      });
       jQuery(".last-post").each(function(){
-          jQuery(this).addClass("XS");
+          jQuery(this).addClass("XS").css("width","65px");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:6}).change();
       });
       jQuery(".editor").parent().each(function(){
-          jQuery(this).addClass("XS");
+          jQuery(this).addClass("XS").css("width","200px");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:12}).change();
       });
+
+      jQuery(".last-post").css("width","65px");
   }, 750);
 });
 
