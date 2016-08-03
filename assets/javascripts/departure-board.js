@@ -143,8 +143,20 @@ FlapDemo.prototype = {
 
 $(document).ready(function(){
   setTimeout(function(){
+      var entry = 0;
+      var lineln = 0;
       jQuery(".wrap").css("max-width","100%");
       jQuery(".topic-list td a").each(function(){
+          switch(entry) {
+              case 0:
+                  lineln = 22;
+                  break;
+              case 1:
+                  lineln = 22;
+                  break;
+              default:
+                  lineln = 22;
+          }
           jQuery(this).addClass("XS");
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:count}).change();
