@@ -183,7 +183,7 @@ $(document).ready(function(){
           var atag = "<a href='"+url+"' title='' />";
           jQuery(this).wrapAll(atag);
         jQuery(this).flapper({width:7,align:'left'}).change();
-          jQuery(this).parent().css("width","110px");
+          jQuery("td.last-post").css("width","110px !important");
     });
     jQuery(".editor").parent().each(function(){
         jQuery(this).addClass("XS").css("width","200px");
