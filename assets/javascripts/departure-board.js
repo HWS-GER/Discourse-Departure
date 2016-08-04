@@ -148,46 +148,45 @@ $(document).ready(function(){
       jQuery(".wrap").css("max-width","100%");
 
       jQuery("a.badge-wrapper.bar").each(function(){
-          jQuery(this).addClass("XS");
-          jQuery(this).parent().css("width","120px");
-          var a = jQuery(this).attr("href");
-          var url = "http://checkpointforarts.com"+a;
-          var atag = "<a href='"+url+"' title='' />";
-          jQuery(this).parent().wrapAll(atag);
-          jQuery(this).flapper({width:8,align:'left'}).change();
-      });
+        jQuery(this).addClass("XS");
+        jQuery(this).parent().css("width","120px");
+        var a = jQuery(this).attr("href");
+        var url = "http://checkpointforarts.com"+a;
+        var atag = "<a href='"+url+"' title='' />";
+        jQuery(this).parent().wrapAll(atag);
+        jQuery(this).flapper({width:8,align:'left'}).change();
+    });
 
-      jQuery("a.title").each(function(){
-          jQuery(this).addClass("XS");
-          jQuery(this).parent().css("width","420px");
-          var a = jQuery(this).attr("href");
-          var url = "http://checkpointforarts.com"+a;
-          var atag = "<a href='"+url+"' title='' />";
-          jQuery(this).parent().wrapAll(atag);
-          jQuery(this).flapper({width:28,align:'left'}).change();
-      });
-     jQuery("td.num.views").each(function(){
-         jQuery(this).addClass("XS").css("width","35px");
-         var count = jQuery(this).text().length;
-         jQuery(this).flapper({width:3,align:'left'}).change();
-     });
-      jQuery("td.num.posts-map.posts.heatmap-").each(function(){
-          jQuery(this).addClass("XS").css("width","35px");
-          var count = jQuery(this).text().length;
-          jQuery(this).flapper({width:2,align:'left'}).change();
-      });
-      jQuery(".flapper.last-post").each(function(){
-          jQuery(this).addClass("XS");
-          jQuery(this).flapper({width:5,align:'left'}).change();
-          jQuery("div.flapper.last-post").css("width","110px");
-      });
-      jQuery(".editor").parent().each(function(){
-          jQuery(this).addClass("XS").css("width","200px");
-          jQuery(this).flapper({width:12,align:'left'}).change();
-      });
+    jQuery("a.title").each(function(){
+        jQuery(this).addClass("XS");
+        jQuery(this).parent().css("width","420px");
+        var a = jQuery(this).attr("href");
+        var url = "http://checkpointforarts.com"+a;
+        var atag = "<a href='"+url+"' title='' />";
+        jQuery(this).parent().wrapAll(atag);
+        jQuery(this).flapper({width:28,align:'left'}).change();
+    });
+    jQuery("td.num.views").each(function(){
+        jQuery(this).addClass("XS").css("width","35px");
+        var count = jQuery(this).text().length;
+        jQuery(this).flapper({width:3,align:'left'}).change();
+    });
+    jQuery("td.num.posts-map.posts.heatmap-").each(function(){
+        jQuery(this).addClass("XS").css("width","35px");
+        var count = jQuery(this).text().length;
+        jQuery(this).flapper({width:2,align:'left'}).change();
+    });
+    jQuery(".flapper.last-post").each(function(){
+        jQuery(this).addClass("XS");
+        jQuery(this).flapper({width:5,align:'left'}).change();
+        jQuery("div.flapper.last-post").css("width","110px");
+    });
+    jQuery(".editor").parent().each(function(){
+        jQuery(this).addClass("XS").css("width","200px");
+        jQuery(this).flapper({width:12,align:'left'}).change();
+    });
 
-      jQuery("div.last-post").css("width","65px");
-  }, 750);
+}, 750);
 });
 
 function flapperize(element){
