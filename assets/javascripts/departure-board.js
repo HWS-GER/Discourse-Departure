@@ -181,6 +181,7 @@ $(document).ready(function(){
           var a = jQuery('.last-post>.poster-info > a').attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
+          jQuery(this).wrapAll(atag);
         jQuery(this).flapper({width:7,align:'left'}).change();
           jQuery(this).parent().css("width","110px");
     });
