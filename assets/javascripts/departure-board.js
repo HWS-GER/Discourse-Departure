@@ -179,7 +179,7 @@ $(document).ready(function(){
       jQuery(".last-post>.poster-info").each(function(){
         jQuery(this).addClass("XS");
           jQuery("td.last-post").css("width","110px !important");
-          console.log(jQuery("td.last-post").css());
+          
           var a = jQuery('.last-post>.poster-info > a').attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
