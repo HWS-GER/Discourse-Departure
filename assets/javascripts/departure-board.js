@@ -149,7 +149,7 @@ $(document).ready(function(){
 
       jQuery("a.badge-wrapper.bar").each(function(){
           jQuery(this).parent().addClass("XS");
-          var a = jQuery("this").attr("href");
+          var a = jQuery(this).attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
           jQuery(this).parent().wrapAll(atag);
@@ -159,7 +159,7 @@ $(document).ready(function(){
       jQuery("a.title").each(function(){
           jQuery(this).addClass("XS");
           jQuery(this).parent().css("width","306px");
-          var a = jQuery("this").attr("href");
+          var a = jQuery(this).attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
           jQuery(this).parent().wrapAll(atag);
