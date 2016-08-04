@@ -178,11 +178,18 @@ $(document).ready(function(){
     });
       jQuery(".last-post>.poster-info").each(function(){
         jQuery(this).addClass("XS");
+          var a = jQuery('.last-post>.poster-info > a').attr("href");
+          var url = "http://checkpointforarts.com"+a;
+          var atag = "<a href='"+url+"' title='' />";
         jQuery(this).flapper({width:7,align:'left'}).change();
           jQuery(this).parent().css("width","110px");
     });
     jQuery(".editor").parent().each(function(){
         jQuery(this).addClass("XS").css("width","200px");
+        var a = jQuery('.editor a').attr("href");
+        var url = "http://checkpointforarts.com"+a;
+        var atag = "<a href='"+url+"' title='' />";
+        jQuery(this).wrapAll(atag);
         jQuery(this).flapper({width:11,align:'left'}).change();
     });
 
