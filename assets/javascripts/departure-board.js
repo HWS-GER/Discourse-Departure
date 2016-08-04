@@ -148,7 +148,7 @@ $(document).ready(function(){
       jQuery(".wrap").css("max-width","100%");
 
       jQuery("a.badge-wrapper.bar").each(function(){
-          jQuery(this).parent().addClass("XS");
+          jQuery(this).addClass("XS");
           var a = jQuery(this).attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
