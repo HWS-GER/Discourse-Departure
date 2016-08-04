@@ -186,6 +186,7 @@ $(document).ready(function(){
         jQuery(this).flapper({width:12,align:'left'}).change();
     });
 
+    
 }, 750);
 });
 
