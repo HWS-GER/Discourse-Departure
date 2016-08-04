@@ -166,11 +166,16 @@ $(document).ready(function(){
           jQuery(this).parent().wrapAll(atag);
           jQuery(this).flapper({width:28,align:'left'}).change();
       });
-     jQuery(".num.posts-map").each(function(){
-         jQuery(this).addClass("XS").css("width","45px");
+     jQuery("td.num.views").each(function(){
+         jQuery(this).addClass("XS").css("width","35px");
          var count = jQuery(this).text().length;
-         jQuery(this).flapper({width:2,align:'left'}).change();
+         jQuery(this).flapper({width:3,align:'left'}).change();
      });
+      jQuery("td.num.posts-map.posts.heatmap-").each(function(){
+          jQuery(this).addClass("XS").css("width","35px");
+          var count = jQuery(this).text().length;
+          jQuery(this).flapper({width:2,align:'left'}).change();
+      });
       jQuery(".last-post").each(function(){
           jQuery(this).addClass("XS").css("width","70px");;
           jQuery(this).flapper({width:8,align:'left'}).change();
