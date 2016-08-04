@@ -176,9 +176,10 @@ $(document).ready(function(){
           var count = jQuery(this).text().length;
           jQuery(this).flapper({width:2,align:'left'}).change();
       });
-      jQuery(".last-post").each(function(){
-          jQuery(this).addClass("XS").css("width","70px");;
-          jQuery(this).flapper({width:8,align:'left'}).change();
+      jQuery(".flapper.last-post").each(function(){
+          jQuery(this).addClass("XS");
+          jQuery(this).flapper({width:5,align:'left'}).change();
+          jQuery("div.flapper.last-post").css("width","110px");
       });
       jQuery(".editor").parent().each(function(){
           jQuery(this).addClass("XS").css("width","200px");
