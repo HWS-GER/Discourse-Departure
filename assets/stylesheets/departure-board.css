@@ -1,3 +1,6 @@
 .topic-statuses{
 	display: none;
 }
+td.last-post{
+	width: 110px !important;
+}
