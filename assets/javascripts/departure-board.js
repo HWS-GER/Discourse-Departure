@@ -159,12 +159,12 @@ $(document).ready(function(){
 
     jQuery("a.title").each(function(){
         jQuery(this).addClass("XS");
-        jQuery(this).parent().css("width","565px");
+        jQuery(this).parent().css("width","585px");
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
         jQuery(this).parent().wrapAll(atag);
-        jQuery(this).flapper({width:39,align:'left'}).change();
+        jQuery(this).flapper({width:40,align:'left'}).change();
     });
     jQuery("td.num.views").each(function(){
         /**jQuery(this).addClass("XS").css("width","35px");
