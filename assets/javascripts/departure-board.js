@@ -164,19 +164,19 @@ $(document).ready(function(){
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
         jQuery(this).parent().wrapAll(atag);
-        jQuery(this).flapper({width:39,align:'left'}).change();
+        jQuery(this).flapper({width:42,align:'left'}).change();
     });
     jQuery("td.num.views").each(function(){
         /**jQuery(this).addClass("XS").css("width","35px");
         var count = jQuery(this).text().length;
         jQuery(this).flapper({width:3,align:'left'}).change();*/
-		$(this).remove();
+		$(this).empty();
     });
     jQuery("td.num.posts-map.posts.heatmap-").each(function(){
        /** jQuery(this).addClass("XS").css("width","35px");
         var count = jQuery(this).text().length;
         jQuery(this).flapper({width:2,align:'left'}).change();*/
-		$(this).remove();
+		$(this).empty();
     });
       jQuery(".last-post>.poster-info").each(function(){
         jQuery(this).addClass("XS");
