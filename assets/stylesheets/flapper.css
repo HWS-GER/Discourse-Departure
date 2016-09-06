@@ -91,7 +91,9 @@
 .flapper.XXL .digit .bottom {
     clip: rect(65px, 96px, 128px, 0px); 
 }
-
+.topic-list .num{
+	text-align:left !important;
+}
 .flapper .poster-info .XS{
 	width:150px !important; 
 }
