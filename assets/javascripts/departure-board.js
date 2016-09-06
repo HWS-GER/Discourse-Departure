@@ -173,7 +173,7 @@ $(document).ready(function(){
 		$(this).remove();
     });
     jQuery("td.num.posts-map.posts.heatmap-").each(function(){
-        jQuery(this).addClass("XS").css("width","60px");
+        jQuery(this).addClass("XS reply").css("width","60px");
         var count = jQuery(this).text().length;
         jQuery(this).flapper({width:4,align:'left'}).change();
 		
