@@ -156,14 +156,14 @@ $(document).ready(function(){
         jQuery("div.badge-wrapper.bar").wrapAll(atag);
         jQuery(this).flapper({width:8,align:'left'}).change();
     });
-
+	
     jQuery("a.title").each(function(){
         jQuery(this).addClass("XS");
         jQuery(this).parent().css("width","530px");
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-       jQuery("div.title").wrapAll(atag);
+       jQuery(this).parent().children("div").wrapAll(atag);
         jQuery(this).flapper({width:36,align:'left'}).change();
 		 
     });
