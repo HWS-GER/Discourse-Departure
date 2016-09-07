@@ -191,7 +191,7 @@ $(document).ready(function(){
 
     });
     jQuery(".editor").parent().each(function(){
-        jQuery(this).parent().children().addClass("XS").css("width","200px");
+        jQuery(this).parent().children("div").addClass("XS").css("width","200px");
         var a = jQuery('.editor a').attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
