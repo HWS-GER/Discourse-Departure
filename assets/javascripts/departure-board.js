@@ -153,17 +153,17 @@ $(document).ready(function(){
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery(this).next().wrapAll(atag);
+        jQuery("div.badge-wrapper.bar").wrapAll(atag);
         jQuery(this).flapper({width:8,align:'left'}).change();
     });
 
     jQuery("a.title").each(function(){
         jQuery(this).addClass("XS");
-        jQuery(this).parent().css("width","520px");
+        jQuery(this).parent().css("width","580px");
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery(this).next().wrapAll(atag);
+        jQuery("div.title").wrapAll(atag);
         jQuery(this).flapper({width:36,align:'left'}).change();
     });
     jQuery("td.num.views").each(function(){
@@ -185,12 +185,12 @@ $(document).ready(function(){
           var a = jQuery('.last-post>.poster-info > a').attr("href");
           var url = "http://checkpointforarts.com"+a;
           var atag = "<a href='"+url+"' title='' />";
-          jQuery(this).next().wrapAll(atag);
+          $("td.last-post div.poster-info:nth-child(2)").wrapAll(atag);
         jQuery(this).flapper({width:7,align:'left'}).change();
 
     });
     jQuery(".editor").parent().each(function(){
-        jQuery(this).addClass("XS").css("width","200px");
+        jQuery(this).children().addClass("XS").css("width","200px");
         var a = jQuery('.editor a').attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
