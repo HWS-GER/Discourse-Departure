@@ -153,7 +153,7 @@ $(document).ready(function(){
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery(this).parent().wrapAll(atag);
+        jQuery(this).next().wrapAll(atag);
         jQuery(this).flapper({width:8,align:'left'}).change();
     });
 
@@ -163,7 +163,7 @@ $(document).ready(function(){
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery(this).parent().wrapAll(atag);
+        jQuery(this).next().wrapAll(atag);
         jQuery(this).flapper({width:36,align:'left'}).change();
     });
     jQuery("td.num.views").each(function(){
