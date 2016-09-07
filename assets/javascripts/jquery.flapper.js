@@ -12,7 +12,7 @@
         this.options.transform = this.options.transform && $.transform;
 
         this.$div = $('<div></div>');
-        this.$div.attr('class', 'flapper XS ' + this.$ele.attr('class'));
+        this.$div.attr('class', 'flapper ' + this.$ele.attr('class'));
         this.$ele.hide().after(this.$div);
         
         this.$ele.bind('change.flapper', function(){
