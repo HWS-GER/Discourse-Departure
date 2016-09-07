@@ -153,7 +153,7 @@ $(document).ready(function(){
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery("div.badge-wrapper.bar").wrapAll(atag);
+        jQuery(this).wrapAll(atag);
         jQuery(this).flapper({width:8,align:'left'}).change();
     });
 	
