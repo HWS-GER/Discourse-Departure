@@ -159,7 +159,7 @@ $(document).ready(function(){
 
     jQuery("a.title").each(function(){
         jQuery(this).addClass("XS");
-        jQuery(this).parent().css("width","580px");
+        jQuery(this).parent().css("width","530px");
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
