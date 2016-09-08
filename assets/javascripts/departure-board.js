@@ -160,9 +160,7 @@ $(document).ready(function(){
     jQuery("a.title").each(function(){
         jQuery("div.title").addClass("XS").css("width","530px");;
         jQuery(this).parent().css("width","530px");
-        var a = jQuery(this).attr("href");
-        var url = "http://checkpointforarts.com"+a;
-        var atag = "<a href='"+url+"' title='' />";
+       
      
         jQuery(this).flapper({width:36,align:'left'}).change();
 		   
@@ -198,8 +196,16 @@ $(document).ready(function(){
         jQuery(this).children('div').wrapAll(atag);
         jQuery(this).children().flapper({width:10,align:'left'}).change();
     });
-console.log(jQuery("a.title").parent().children("div").wrapAll(atag));
-
+	
+	 jQuery("a.title").each(function(){
+				 var a = jQuery(this).attr("href");
+				var url = "http://checkpointforarts.com"+a;
+				var atag = "<a href='"+url+"' title='' />";
+		 
+			console.log(jQuery("a.title").parent().children("div").wrapAll(atag));
+			
+			
+	 });
 }, 750);
 });
 
