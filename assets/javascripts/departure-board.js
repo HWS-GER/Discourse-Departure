@@ -192,10 +192,10 @@ $(document).ready(function(){
     });
     jQuery(".editor").parent().each(function(){
         jQuery(".editor").next("div").addClass("XS").css("width","200px");
-        var a = jQuery('.editor a').attr("href");
+       var a = jQuery('this').children('a').attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-        jQuery(this).parent().children("div").wrapAll(atag);
+        jQuery(this).children('div').wrapAll(atag);
         jQuery(this).children().flapper({width:10,align:'left'}).change();
     });
 
