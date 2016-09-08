@@ -202,7 +202,7 @@ $(document).ready(function(){
 				var url = "http://checkpointforarts.com"+a;
 				var atag = "<a href='"+url+"' title='' />";
 		 
-			console.log(jQuery("a.title").parent().children("div").wrapAll(atag));
+			console.log(jQuery(this).parent().children("div").wrapAll(atag));
 			
 			
 	 });
