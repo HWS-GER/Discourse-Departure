@@ -163,7 +163,7 @@ $(document).ready(function(){
         var a = jQuery(this).attr("href");
         var url = "http://checkpointforarts.com"+a;
         var atag = "<a href='"+url+"' title='' />";
-       jQuery(this).parent().children("div").wrapAll(atag);
+       console.log(jQuery(this).parent().children("div").wrapAll(atag));
         jQuery(this).flapper({width:36,align:'left'}).change();
 		 
     });
