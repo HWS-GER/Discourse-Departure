@@ -158,7 +158,7 @@ $(document).ready(function(){
     });
 	
     jQuery("a.title").each(function(){
-        jQuery("div.title").addClass("XS").css("width","530px");;
+        jQuery("div.title").addClass("XS").css("width","530px");
         jQuery(this).parent().css("width","530px");
        
      
